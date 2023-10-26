@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+/* Estilos para el encabezado */
+header {
+    width: 100%;
+    margin: 0; /* Asegura que no haya margen en el encabezado */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #282727;
+    color: #fff;
+    justify-content: space-between; /* Alinea elementos en el encabezado */
+}
+
+/* Estilos para el título del encabezado */
+.header-title {
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el ancho según el tamaño de tu logotipo */
+}
+
+.header-content {
+    text-align: left;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 5px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px; /* Ajusta el margen según tu preferencia */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/*****************************************************************************************************************************
+/* Estilos para la imagen de banner */
+.banner-image {
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    max-width: 100%; /* Asegura que la imagen sea responsiva y se ajuste al ancho del contenedor */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    margin-bottom: 8px; /* Agrega un espacio entre la imagen del banner y el título */
+}
+
+/* Sección de contenido */
+section {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilos para la barra de navegación activa */
+nav a.current {
+    font-weight: bold;
+    color: #007BFF;
+}
+/********************************************************Contacto **************************************/
+.contact-box {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con un color de sombra */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+/********************************************************Acerca**************************************/
+
+/* Estilos para la sección "Acerca de la Empresa" */
+section {
+    /*max-width: 800px;*/
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #007BFF;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section li {
+    margin: 5px 0;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+/********************************************Portafolio*************************************/
+
+/* ... Estilos anteriores ... */
+
+.portfolio-item {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto; /* Para que el cuadro del ejemplo contenga tanto la imagen como el texto */
+}
+
+.portfolio-item img {
+    float: left; /* Coloca la imagen en el lado izquierdo */
+    margin-right: 20px; /* Agrega espacio entre la imagen y el texto */
+}
+
+.portfolio-item h2 {
+    text-align: left;
+}
+
+.portfolio-item p {
+    text-align: justify;
+}
+.portfolio-item img {
+    max-width: 20%;
+}
