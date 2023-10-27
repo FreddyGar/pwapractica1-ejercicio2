@@ -11,50 +11,57 @@ body {
 header {
     width: 100%;
     margin: 0; /* Asegura que no haya margen en el encabezado */
-    padding: 10px;
+    padding: 5px;
     display: flex;
-    align-items: center;
-    background-color: #282727;
-    color: #fff;
+    align-items:center;
+    background-color: #333;
+    color: #ffffff;
     justify-content: space-between; /* Alinea elementos en el encabezado */
 }
 
 /* Estilos para el título del encabezado */
+
 .header-title {
+    
     color: white;  
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
     margin-right: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .logo img {
-    width: 100px; /* Ajusta el ancho según el tamaño de tu logotipo */
+    width: 150px; /* Ajusta el ancho según el tamaño de tu logotipo */
 }
 
 .header-content {
+    padding-left: 10%;
     text-align: left;
 }
-
+/*************************************************************************************************/
 /* Barra de navegación */
 nav {
-    background-color: #333;
+    /*background-color: #333;*/
     text-align: right;
+    padding-right: 15px;
 }
 
 nav ul {
     list-style: none;
-    padding: 5px;
+    padding: 3px;
+    
 }
 
 nav li {
+    font-size: 14px;
     display: inline;
-    margin: 0 10px; /* Ajusta el margen según tu preferencia */
+    margin: 0 5px; /* Ajusta el margen según tu preferencia */
 }
 
 nav a {
+    
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
@@ -169,4 +176,156 @@ footer {
 }
 .portfolio-item img {
     max-width: 20%;
+}
+/**************************************************************************************/
+
+
+
+/* Testimoniales */
+section {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.testimonial img {
+    width: 15%;
+    height:50%;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.testimonial .testimonial-author {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+/*****************************************************************************************/
+
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px; /* Agregamos relleno para resaltar el formulario */
+    border: 1px solid #ccc; /* Agregamos un borde alrededor del formulario */
+    background-color: #f5f5f5; /* Cambia el color de fondo del formulario */
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de contacto - Responsivo */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+/*******************************************************************************************/
+
+/* Estilos para el artículo del blog */
+article {
+    height: 200px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Estilos para las imágenes de los artículos */
+article img {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 200px; /* Ajusta el ancho máximo según tus preferencias */
+    height: auto;
+}
+
+/* Estilos para los títulos de los artículos */
+article h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Estilos para los enlaces de "Leer más" */
+article a {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/***************************************************************************/
+/* Sección de Precios */
+section {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los elementos de precios */
+.price-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.price-item h3 {
+    color: #007BFF;
 }
